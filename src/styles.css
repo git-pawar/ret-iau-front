@@ -1,0 +1,11 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600';
+@import 'assets/vendors/css/vendors.css';
+@import 'assets/css/bootstrap-extended.css';
+@import 'assets/css/colors.css';
+@import 'assets/css/components.css';
+@import 'assets/css/themes/dark-layout.css';
+@import 'assets/css/themes/semi-dark-layout.css';
+@import 'assets/css/core/menu/menu-types/vertical-menu.css';
+@import 'assets/css/core/colors/palette-gradient.css';
+@import 'assets/css/pages/authentication.css';
+@import 'assets/css/style.css';

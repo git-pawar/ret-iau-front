@@ -36,7 +36,7 @@ import { AuthGuard } from './guards/auth.guard';
     CommonModule,
     HomeModule,
     DashboardModule,
-    RouterModule.forRoot(routes) 
+    RouterModule.forRoot(routes)
   ],
   providers: [AuthService,AuthGuard],
   bootstrap: [AppComponent]

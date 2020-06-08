@@ -12,7 +12,9 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
+import { OtpComponent } from './home/otp/otp.component';
 import { NoPageComponent } from './no-page/no-page.component';
+
 
 import {routes} from './app.router';
 import { HomeModule } from './home/home.module';
@@ -24,12 +26,13 @@ import { AuthGuard } from './guards/auth.guard';
     NavMenuComponent,
     DashboardComponent,
     HomeComponent,
-    NoPageComponent
+    NoPageComponent,
+
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
-    FormsModule, 
+    FormsModule,
     CommonModule,
     HomeModule,
     DashboardModule,

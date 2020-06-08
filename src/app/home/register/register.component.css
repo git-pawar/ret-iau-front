@@ -1,0 +1,20 @@
+.basic_input_label {
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+}
+.mr-0
+{
+  margin-right:0px !important;
+}
+.btn_login {
+  border:1px solid #dca603;
+  color: #dca603;
+  font-weight: 600;
+}
+.btn_reg
+{
+  background: #dca603;
+  color: white;
+  font-weight: 600;
+}

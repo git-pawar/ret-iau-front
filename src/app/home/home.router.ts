@@ -1,3 +1,5 @@
+import { OtpComponent } from './otp/otp.component';
+import { Component } from '@angular/core';
 import { ForgotComponent } from './forgot/forgot.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
@@ -13,7 +15,8 @@ export const HomeRoutes : Route[]=[
         children:[
             {path:'login',component:LoginComponent},
             {path:'register',component:RegisterComponent},
-            {path:'forgot',component:ForgotComponent}
+            {path:'forgot',component:ForgotComponent},
+            {path:'otp',component:OtpComponent}
         ]
     }
 ]

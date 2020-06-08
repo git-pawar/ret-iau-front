@@ -1,0 +1,59 @@
+.logo_img_otp {
+  width: 98px;
+
+  position: absolute;
+  right: 7px;
+  top: 11px;
+}
+
+.phoneno_otp {
+  font-size: 14px;
+  font-weight: 600;
+}
+.sub_title {
+  font-size: 13px;
+  line-height: 19px;
+}
+.title_otp {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: -14px;
+}
+/*otp section*/
+.otpform  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 223px;
+  margin: 34px auto 0px;
+}
+
+
+.otpform  input {
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  /* margin-right: 25px; */
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.otpform  input:last-child {
+  margin-right: 0;
+}
+.otpform  input::-webkit-inner-spin-button, .otpform  input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.otpform input:focus, section form input.focus {
+  border-color: green;
+  outline: none;
+  box-shadow: none;
+}
+.btn_submit {
+  background: #024039;
+  margin-top: 25px;
+  color: white;
+  margin-bottom: 11px;
+}

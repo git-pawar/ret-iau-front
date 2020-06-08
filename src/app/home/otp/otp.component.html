@@ -7,92 +7,43 @@
       </div>
       <div class="content-body">
           <section class="row flexbox-container">
-              <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 d-flex justify-content-center">
+              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center">
                   <div class="card bg-authentication rounded-0 mb-0 w-100">
-                      <div class="row m-0">
-                          <div class="col-lg-6 d-lg-block d-none text-center align-self-center pl-0 pr-3 py-0">
-                              <img src="../../../assets/images/pages/register.jpg" alt="branding logo">
-                          </div>
-                          <div class="col-lg-6 col-12 p-0">
+
                               <div class="card rounded-0 mb-0 p-2">
                                   <div class="card-header pt-50 pb-1">
+                                    <div class="logo_img_otp">
+                                      <img src="../assets/images/logo/logo.png" class="w-100">
+                                    </div>
                                       <div class="card-title">
-                                          <h4 class="mb-0">Create Account</h4>
+                                          <h4 class="mb-0 title_otp">Verify your phone number.</h4>
                                       </div>
                                   </div>
-                                  <p class="px-2">Fill the below form to create a new account.</p>
+                                  <p class="px-2 sub_title">To make sure this number is yours, iap will send you a text message with a 6-digit verification code. Standard rates apply</p>
                                   <div class="card-content">
                                       <div class="card-body pt-0">
+<p class="phoneno_otp">
+   <span class="fa fa-phone mr-3"></span>
+<span>
+  7000535289
+</span>
 
+</p>
+<form class="otpform">
+  <input id="codeBox1" type="number" maxlength="1" onkeyup="onKeyUpEvent(1, event)" onfocus="onFocusEvent(1)">
+  <input id="codeBox2" type="number" maxlength="1" onkeyup="onKeyUpEvent(2, event)" onfocus="onFocusEvent(2)">
+  <input id="codeBox3" type="number" maxlength="1" onkeyup="onKeyUpEvent(3, event)" onfocus="onFocusEvent(3)">
+  <input id="codeBox4" type="number" maxlength="1" onkeyup="onKeyUpEvent(4, event)" onfocus="onFocusEvent(4)">
+</form>
+<div class="">
 
-                                              <form action="index.html">
-                                                <div class="form-label-group">
-                                                  <label class="basic_input_label" for="basicInput"> Type<span class="text-danger">*</span></label>
-                                                  <select class="custom-select h-35" id="customSelect">
-                                                      <option selected="">Reason For Visit</option>
-                                                      <option value="">Fever</option>
-                                                      <option value="">Radiologyy</option>
-                                                      <option value="">Pathology</option>
+  <a routerLink='/otp' type="submit" class="btn btn_submit float-right btn-inline mb-50">Submit</a>
+</div>
 
-                                                  </select>
-                                                  </div>
-                                                  <div class="form-label-group">
-
-                                                      <label class="basic_input_label" for="basicInput"> Organisation Name<span class="text-danger">*</span></label>
-                                                      <input type="text" id="" class="form-control" placeholder="Organisation Name" required>
-                                                  </div>
-                                                  <div class="row w-100 m-0">
-                                                    <div class="form-label-group col-sm-6 pl-0">
-                                                      <input type="text" id="inputName" class="form-control" placeholder="First Name" required>
-                                                      <label for="inputName">First Name</label>
-                                                  </div>
-                                                  <div class="form-label-group col-sm-6 pr-0">
-                                                    <input type="text" id="inputName" class="form-control" placeholder="Last Name" required>
-                                                    <label for="inputName">Last Name</label>
-                                                </div>
-
-                                                  </div>
-                                                  <div class="form-label-group ">
-                                                    <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
-                                                    <label for="inputEmail">Email</label>
-                                                </div>
-                                                <div class="row w-100 m-0">
-                                              <div class="form-label-group col-sm-6 pl-0">
-                                                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                                                  <label for="inputPassword">Password</label>
-                                              </div>
-                                              <div class="form-label-group col-sm-6 pr-0">
-                                                  <input type="password" id="inputConfPassword" class="form-control" placeholder="Confirm Password" required>
-                                                  <label for="inputConfPassword">Confirm Password</label>
-                                              </div>
-                                            </div>
-                                              <!-- <div class="form-group row">
-                                                  <div class="col-12">
-                                                      <fieldset class="checkbox">
-                                                          <div class="vs-checkbox-con vs-checkbox-primary">
-                                                              <input type="checkbox" checked>
-                                                              <span class="vs-checkbox">
-                                                                  <span class="vs-checkbox--check">
-                                                                      <i class="vs-icon feather icon-check"></i>
-                                                                  </span>
-                                                              </span>
-                                                              <span class=""> I accept the terms & conditions.</span>
-                                                          </div>
-                                                      </fieldset>
-                                                  </div>
-                                              </div> -->
-
-                                            <div class="form-group">
-
-                                              <a routerLink='/login' class="btn btn_login mt-5 btn-inline mb-50">Login</a>
-                                              <a routerLink='/otp' type="submit" class="btn btn_reg float-right btn-inline mb-50">Next</a>
-                                            </div>
-                                          </form>
                                       </div>
                                   </div>
                               </div>
-                          </div>
-                      </div>
+
                   </div>
               </div>
           </section>

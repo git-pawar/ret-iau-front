@@ -8,13 +8,14 @@
   margin-right:0px !important;
 }
 .btn_login {
-  border:1px solid #dca603;
-  color: #dca603;
+  border:1px solid #3e3d3c;
+  color: #3e3d3c;
   font-weight: 600;
 }
 .btn_reg
 {
-  background: #dca603;
+  background: #3e3d3c;
   color: white;
   font-weight: 600;
 }
+

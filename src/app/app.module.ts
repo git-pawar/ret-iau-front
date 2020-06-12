@@ -19,6 +19,8 @@ import { NoPageComponent } from './no-page/no-page.component';
 import {routes} from './app.router';
 import { HomeModule } from './home/home.module';
 import { AuthGuard } from './guards/auth.guard';
+import { PatientlistComponent } from './dashboard/patientlist/patientlist.component';
+import { AddpatientComponent } from './dashboard/addpatient/addpatient.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { AuthGuard } from './guards/auth.guard';
     DashboardComponent,
     HomeComponent,
     NoPageComponent,
+    PatientlistComponent,
+    AddpatientComponent,
 
   ],
   imports: [

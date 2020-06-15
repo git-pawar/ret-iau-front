@@ -23,6 +23,8 @@ import { HomeModule } from './home/home.module';
 import { AuthGuard } from './guards/auth.guard';
 import { PatientlistComponent } from './dashboard/patientlist/patientlist.component';
 import { AddpatientComponent } from './dashboard/addpatient/addpatient.component';
+import { PrescriptionsComponent } from './dashboard/prescriptions/prescriptions.component';
+import { AddPrescriptionsComponent } from './dashboard/add-prescriptions/add-prescriptions.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { AddpatientComponent } from './dashboard/addpatient/addpatient.component
     NoPageComponent,
     PatientlistComponent,
     AddpatientComponent,
+    PrescriptionsComponent,
+    AddPrescriptionsComponent,
 
   ],
   imports: [

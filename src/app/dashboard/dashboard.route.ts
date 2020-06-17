@@ -1,3 +1,5 @@
+import { AddPrescriptionsComponent } from './add-prescriptions/add-prescriptions.component';
+import { PrescriptionsComponent } from './prescriptions/prescriptions.component';
 import { AddpatientComponent } from './addpatient/addpatient.component';
 import { PatientlistComponent } from './patientlist/patientlist.component';
 import { MainComponent } from './main/main.component';
@@ -15,7 +17,9 @@ export const DashboardRoute : Route[]=[
             {path:'settings', component:SettingsComponent},
             {path:'dashboard', component:MainComponent},
             {path:'patientlist', component:PatientlistComponent},
-            {path:'addpatient', component:AddpatientComponent}
+            {path:'addpatient', component:AddpatientComponent},
+            {path:'prescriptions', component:PrescriptionsComponent},
+            {path:'addprescription', component:AddPrescriptionsComponent}
         ]
     }
 ]

@@ -2,12 +2,14 @@ import { AuthService } from './services/auth.service';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { MessageService } from './message.service';
+import { HttpErrorHandler } from './http-error-handler.service';
 
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -21,6 +23,8 @@ import { HomeModule } from './home/home.module';
 import { AuthGuard } from './guards/auth.guard';
 import { PatientlistComponent } from './dashboard/patientlist/patientlist.component';
 import { AddpatientComponent } from './dashboard/addpatient/addpatient.component';
+import { PrescriptionsComponent } from './dashboard/prescriptions/prescriptions.component';
+import { AddPrescriptionsComponent } from './dashboard/add-prescriptions/add-prescriptions.component';
 
 @NgModule({
   declarations: [
@@ -31,18 +35,20 @@ import { AddpatientComponent } from './dashboard/addpatient/addpatient.component
     NoPageComponent,
     PatientlistComponent,
     AddpatientComponent,
+    PrescriptionsComponent,
+    AddPrescriptionsComponent,
 
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
-    FormsModule,
+    FormsModule,ReactiveFormsModule,
     CommonModule,
     HomeModule,
     DashboardModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [AuthService,AuthGuard],
+  providers: [AuthService,AuthGuard,HttpErrorHandler, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

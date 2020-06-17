@@ -1,0 +1,16 @@
+
+.title_patient {
+  color: #ff9800;
+  font-weight: 500;
+  font-size: 13px;
+}
+.buttonsubmit {
+  border-top: 1px solid #cccccc40;
+  padding: 17px 0px 0px 0px;
+  margin-top: 16px;
+}
+.border_top
+{
+  border-top:0.8px solid #cccccc54;
+  padding-top:11px;
+}

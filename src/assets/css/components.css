@@ -12,6 +12,9 @@ html {
     /*
       * Blank page
       */ }
+      .form_box {
+        margin-top: 100px;
+    }
     html body .content {
       padding: 0;
       position: relative;
@@ -542,7 +545,7 @@ body.fixed-footer footer.footer-dark {
       align-items: center;
       margin-top: 1.35rem; }
       .main-menu .navbar-header .navbar-brand .brand-logo {
-        background: url("../images/logo/vuexy-logo.png") no-repeat;
+        background: url("../images/logo/favicon.png") no-repeat;
         background-position: -65px -54px;
         height: 24px;
         width: 35px; }

@@ -13,6 +13,7 @@ import { MainComponent } from './main/main.component';
   exports:[HeaderComponent,MenuComponent,FooterComponent],
   imports: [
     CommonModule
+   
   ]
 })
 export class DashboardModule { }
